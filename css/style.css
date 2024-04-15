@@ -1,0 +1,297 @@
+body {
+	font-family: 'ppneuemontreal';
+}
+
+.evebrox-img img {
+	width: 285px;
+	height: 402.98px;
+	border: 1.25px solid #7D828E26;
+}
+
+.evebrox-text h1 {
+	font-weight: 400;
+	font-size: 80px;
+	line-height: 80px;
+	letter-spacing: -0.03em;
+	margin: 0px;
+	padding-right: 45px;
+}
+
+.evebrox-text h1 span {
+	font-size: 80px;
+	font-style: italic;
+	font-weight: 100;
+	line-height: 67.2px;
+	letter-spacing: -0.03em;
+	text-align: left;
+	font-family: 'Denton Condensed';
+}
+
+.main-section .container-fluid {
+	padding: 0 20px;
+}
+
+.main-section {
+	display: flex;
+	align-items: center;
+	overflow-x: auto;
+	white-space: nowrap;
+	justify-content: space-between;
+	height: calc(100vh - 60px);
+	padding: 20px 0;
+}
+
+.inner-main-section {
+	gap: 40px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.evebrox-img {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+nav.navbar {
+	border: 1px solid #ECECECEE;
+	height: 50px;
+	border-bottom: 1px solid #ECECECEE;
+}
+
+.menulogo {
+	width: 65px;
+	height: 46px;
+}
+
+.nav-item {
+	display: inline-block;
+}
+
+a.navbar-brand {
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21px;
+	margin: 0;
+}
+
+ul {
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+form .nav-item .navbar-brand span {
+	background: #C2DDE4;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 15px;
+	padding: 4px 7px;
+	margin-left: 8px;
+	text-transform: uppercase;
+}
+
+.navbar form {
+	height: 48px;
+}
+
+.navbar form ul,
+.navbar form ul li {
+	height: 100%;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 21.6px;
+	letter-spacing: -0.02em;
+
+}
+
+.navbar form ul .nav-item .navbar-brand {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding: 5px 21px;
+	border-right: 1px solid #ECECECEE;
+	border-left: 1px solid #ECECECEE;
+}
+
+.evebrox-text p {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 29px;
+	letter-spacing: -0.015em;
+	text-align: left;
+	margin: 25px 0;
+	max-width: 470px;
+	white-space: normal;
+}
+
+.btn.reports_btn {
+	background: #809AA3;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 20px;
+	letter-spacing: -0.01em;
+	height: 52px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 14px 5px 22px;
+	border-radius: 0;
+	min-width: 300px;
+}
+
+.btn.reports_btn span {
+	border-left: 1.5px solid rgb(255 255 255 / 20%);
+	padding-left: 13px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #E7E7E7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #809AA3;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #809AA3;
+}
+
+.flex_col {
+	padding-left: 50px;
+}
+
+@media (max-width:1300px) {
+	.evebrox-text h1 {
+		font-size: 48px;
+		line-height: 42px;
+		padding-right: 45px;
+	}
+
+	.evebrox-text h1 span {
+		font-size: 48px;
+		line-height: 45px;
+	}
+
+	.evebrox-text p {
+		font-size: 16px;
+		line-height: 22px;
+		margin: 17px 0;
+		max-width: 330px;
+	}
+
+	.btn.reports_btn {
+		font-size: 14px;
+		height: 40px;
+		padding: 5px 12px 5px 18px;
+		min-width: 210px;
+	}
+
+	.btn.reports_btn span {
+		padding-left: 10px;
+	}
+
+	.btn.reports_btn span svg {
+		width: 12px;
+	}
+}
+
+@media (max-width:1024px) {
+	.main-section .container-fluid {
+		height: 100%;
+	}
+
+	.inner-main-section {
+		gap: 30px;
+		flex-wrap: wrap;
+		height: 100%;
+	}
+
+	.flex_col {
+		flex-flow: column;
+		justify-content: center;
+		text-align: center;
+		gap: 30px;
+		padding: 0 50px;
+		margin-top: -130px;
+	}
+
+	.evebrox-text p {
+		margin: 17px auto;
+		text-align: center;
+	}
+
+	.main-section {
+		align-items: flex-start;
+	}
+
+	.evebrox-text {
+		width: 100%;
+		text-align: center;
+	}
+
+	.flex_col .evebrox-text h1 {
+		padding: 0;
+	}
+
+	.flex_col .evebrox-img.pe-5 {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+}
+
+@media (max-width:767px) {
+	.evebrox-text h1 {
+		font-size: 42px;
+		line-height: 40px;
+		padding-right: 45px;
+		padding: 0;
+	}
+
+	.evebrox-text h1 span {
+		font-size: 42px;
+		line-height: 42px;
+	}
+
+	.flex_col .evebrox-text {
+		white-space: normal;
+	}
+
+	.flex_col .evebrox-text br {
+		display: none;
+	}
+
+	.main-section {
+		height: auto;
+		min-height: calc(100vh - 60px);
+		padding: 20px 0 23px;
+	}
+
+	a.navbar-brand {
+		padding: 0;
+	}
+
+	div#navbarSupportedContent {
+		background: #fff;
+		padding: 15px;
+	}
+
+	.navbar form ul {
+		padding: 0;
+	}
+
+	.navbar form {
+		height: 48px;
+		justify-content: center;
+	}
+}

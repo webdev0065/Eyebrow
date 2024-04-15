@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'ppneuemontreal';
+  src: url('ppneuemontreal-thin.eot') format('embedded-opentype'),
+       url('ppneuemontreal-thin.ttf') format('truetype'),
+       url('ppneuemontreal-thin.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppneuemontreal';
+  src: url('ppneuemontreal-book.eot') format('embedded-opentype'),
+       url('ppneuemontreal-book.ttf') format('truetype'),
+       url('ppneuemontreal-book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppneuemontreal';
+  src: url('ppneuemontreal-medium.eot') format('embedded-opentype'),
+       url('ppneuemontreal-medium.ttf') format('truetype'),
+       url('ppneuemontreal-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ppneuemontreal';
+  src: url('ppneuemontreal-bold.eot') format('embedded-opentype'),
+       url('ppneuemontreal-bold.ttf') format('truetype'),
+       url('ppneuemontreal-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Denton Condensed';
+  src: url('Denton Condensed Test Light.eot') format('embedded-opentype'),
+       url('Denton Condensed Test Light.ttf') format('truetype'),
+       url('Denton Condensed Test Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+

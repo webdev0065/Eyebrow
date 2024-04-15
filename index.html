@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Eyebrow Analysis</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+
+
+
+  <style>
+    .scroll-section {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .scroll-content {
+      display: flex;
+      position: relative;
+      height: 620px;
+      width: 300px;
+    }
+
+    .img img {
+      width: 285px;
+      height: auto;
+    }
+
+    .active .evebrox-img {
+      animation-name: example;
+      animation-duration: 4s;
+      position: absolute;
+    }
+
+    .active .evebrox-text {
+      display: none;
+    }
+
+    .evebrox-img {
+      position: absolute;
+    }
+
+    .img-one {
+      left: 0;
+    }
+
+
+    .img-two {
+      left: 300px;
+    }
+
+    .active .img-two {
+      animation-name: img-two;
+      animation-duration: 4s;
+      left: 0;
+    }
+
+    @keyframes img-two {
+      0% {
+        left: 300px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-three {
+      left: 600px;
+    }
+
+    .active .img-three {
+      animation-name: img-three;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-three {
+      0% {
+        left: 600px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-four {
+      left: 900px;
+    }
+
+    .active .img-four {
+      animation-name: img-four;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-four {
+      0% {
+        left: 900px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-five {
+      left: 1200px;
+    }
+
+    .active .img-five {
+      animation-name: img-five;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-five {
+      0% {
+        left: 1200px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-six {
+      left: 1500px;
+    }
+
+    .active .img-six {
+      animation-name: img-six;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-six {
+      0% {
+        left: 1500px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-seven {
+      left: 1800px;
+    }
+
+    .active .img-seven {
+      animation-name: img-seven;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-seven {
+      0% {
+        left: 1800px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-eight {
+      left: 2100px;
+    }
+
+    .active .img-eight {
+      animation-name: img-eight;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-eight {
+      0% {
+        left: 2100px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+
+    .img-nine {
+      left: 2400px;
+    }
+
+    .active .img-nine {
+      animation-name: img-nine;
+      animation-duration: 4s;
+      left: 0px;
+    }
+
+    @keyframes img-nine {
+      0% {
+        left: 2400px;
+      }
+
+      100% {
+        left: 0px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-light p-0">
+    <div class="container-fluid ps-0">
+      <a class="navbar-brand" href="#"><img class="menulogo" src="img/menu.png"></a>
+      <ul class="navbar-nav me-auto mb-0">
+        <li class="nav-item">
+          <a class="navbar-brand" href="#"><img class="secondlogo" src="img/logo.png"></a>
+        </li>
+      </ul>
+      <button class="navbar-toggler px-2" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-end" id="navbarSupportedContent">
+        <form class="d-flex align-items-center">
+          <ul class="d-flex align-items-center">
+            <li class="nav-item">
+              <a class="navbar-brand" href="#">Facial Assessment<span>FREE</span></a>
+            </li>
+            <li class="nav-item px-3 d-flex align-items-center">
+              <svg class="me-2" width="20" height="26" viewBox="0 0 20 26" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1.66602 9.00033C1.66602 8.26395 2.26297 7.66699 2.99936 7.66699H17.6661C18.4025 7.66699 18.9995 8.26395 18.9995 9.00033V23.6671C18.9995 24.4035 18.4025 25.0004 17.6661 25.0004H2.99936C2.26297 25.0004 1.66602 24.4035 1.66602 23.6671V9.00033Z"
+                  stroke="#233137" stroke-width="2.00001" />
+                <path
+                  d="M14.9994 7.66671V5.24245V5.24245C14.9994 2.89941 13.1 1 10.757 1H9.90847C7.56543 1 5.66602 2.89941 5.66602 5.24245V5.24245V7.66671"
+                  stroke="#233137" stroke-width="2.00001" />
+              </svg>
+              0
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+</body>
+<section class="main-section scroll-section">
+  <div class="container-fluid">
+    <div class="inner-main-section d-flex">
+
+      <div class="evebrox-text">
+        <h1>The most <br>comprehensive <br><span>analysis of your face</span></h1>
+      </div>
+
+      <div class="d-flex align-items-center scroll-content">
+
+        <div class="evebrox-img img-one">
+          <img src="img/img1.png">
+        </div>
+
+
+
+        <div class="evebrox-img img-two">
+          <img src="img/img2.png">
+        </div>
+
+
+
+        <div class="evebrox-img img-three">
+          <img src="img/img3.png">
+        </div>
+
+        <div class="evebrox-img img-four">
+          <img src="img/img4.png">
+        </div>
+
+
+
+        <div class="evebrox-img img-five">
+          <img src="img/img5.png">
+        </div>
+
+
+
+
+        <div class="evebrox-img img-six">
+          <img src="img/img6.png">
+        </div>
+
+
+        <div class="evebrox-img img-seven">
+          <img src="img/img7.png">
+        </div>
+
+        <div class="evebrox-img img-eight">
+          <img src="img/img7.png">
+        </div>
+        <div class="evebrox-img img-nine">
+          <img src="img/img12.png">
+        </div>
+        <!-- <div class="d-flex align-items-center flex_col">
+          <div class="evebrox-text">
+            <h1>Documented into<br /> 200 pages <span>report of you</span></h1>
+            <p>Professional facial assessments and clear facial changes visualisation.</p>
+            <button type="button" class="btn reports_btn">ALL REPORTS
+              <span>
+                <svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.6718 0.625977L19 6.68034L12.6718 12.7347" stroke="white" stroke-width="1.5" />
+                  <path d="M19 6.68066H0.0154662" stroke="white" stroke-width="1.5" />
+                </svg>
+              </span>
+            </button>
+          </div>
+
+
+          <div class="evebrox-img pe-5">
+            <img src="img/img12.png">
+          </div>
+        </div> -->
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.scroll-section').on('mousewheel', function (event) {
+      var delta = event.originalEvent.wheelDelta;
+      var scrollLeft = $(this).scrollLeft();
+
+      // Scrolling direction
+      if (delta > 0) {
+        // Scrolling left
+        $(this).scrollLeft(scrollLeft - 100);
+      } else {
+        // Scrolling right
+        $(this).scrollLeft(scrollLeft + 100);
+      }
+
+      event.preventDefault();
+    });
+  });
+
+  $(document).ready(function () {
+    $('.scroll-section').on('mousewheel', function (event) {
+      var delta = event.originalEvent.wheelDelta;
+      var scrollLeft = $(this).scrollLeft();
+      var scrollWidth = $(this).get(0).scrollWidth - $(this).innerWidth();
+
+      if (delta > 0) {
+
+        $(this).scrollLeft(scrollLeft - 50);
+      } else {
+
+        $(this).scrollLeft(scrollLeft + 50);
+      }
+
+      if (scrollLeft >= scrollWidth) {
+        $('.scroll-content').addClass('active');
+      }
+      event.preventDefault();
+    });
+  });
+</script>
+
+</html>
